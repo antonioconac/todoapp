@@ -2,7 +2,7 @@ from modules import functions
 import FreeSimpleGUI as fs
 import time
 
-now = time.strftime('%b %d, ')
+now = time.strftime('%b %d, %Y, %H:%M:%S')
 fs.theme("Black")
 
 clock = fs.Text('', key = 'clock')
