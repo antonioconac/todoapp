@@ -26,9 +26,6 @@ window = fs.Window("My to-do app GUI",
 while True:
     event, values = window.read(timeout=200)
     window['clock'].update(value=time.strftime('%b %d, %Y %H:%M:%S'))
-    print(event)
-    print(values)
-    print(values['todos'])
     match event:
         case 'Add':
             todos = functions.get_todos()
